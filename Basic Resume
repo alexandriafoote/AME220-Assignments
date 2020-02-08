@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Basic Resume</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #3cb371;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 900px; /* only for demonstration, should be removed */
+  background: #1000;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 900px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #3cb371;
+  padding: 10px;
+  text-align: left;
+  color: white;
+}
+
+th, td {
+  padding: 15px;
+}
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Referenced w3schools.com/html/html_layout.asp */
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="thumbnail.png" alt="Thumbnail"> </img>
+  <h1>Alexandria Foote</h1>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <h1 style="color:MediumSeaGreen;"> INFO </h1>
+      <p> Address </p>
+      <li><a href="#">Tempe, AZ 85281</a></li>
+      <p> Phone </p>
+      <li><a href="#">(763) 370-9607</a></li>
+      <p> Email </p>
+      <li><a href="#">afoote1@asu.edu</a></li>
+<h1 style="color:MediumSeaGreen;"> EDUCATION </h1>
+      <table style="width:25%">
+  <tr>
+    <th>Arizona State University</th>
+    <th>Elk River Senior High</th>
+  </tr>
+  <tr>
+    <td>(Digital Culture)</td>
+    <td>High School Diploma</td>
+  </tr>
+  <tr>
+    <td>August 2018 - PRESENT</td>
+    <td>September 2014 - June 2018</td>
+  </tr>
+  <tr>
+    <td>Currently studying Digital Culture with a focus in design at Arizona State University.</td>
+    <td>Graduated with honors.</td>
+  </tr>
+      </table>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>PROFESSIONAL OBJECTIVE</h1>
+    <p>Highly motivated and positive individual with great organizational and communication skills. Experienced with customer service and problem solving. Knowledgable in the creative field and familiar with user experience design.</p>
+    <h1>EXPERIENCE</h1>
+<p> <b> KRAMARCZUK'S SAUSAGE COMPANY </b> - Server </p>
+<p> May 2019 - July 2019 </p>
+<ol>
+  <li>Greeted customers and offered assistance towards immediate questions or concerns.</li>
+  <li>Recommended and interpreted food selections to customers.</li>
+  <li>Completed monetary transactions.</li>
+  <li>Plated, garnished, and delivered dishes to customers.</li>
+</ol>
+
+<p> <b> POUR BOTTLE SHOP </b> - Sales Assosiate </p>
+<p> December 2018 - January 2019 </p>
+<ol>
+  <li>Recommended and interpreted wine selections to customers.</li>
+  <li>Completed monetary transactions.</li>
+  <li>Stocked shelves and took inventory.</li>
+  <li>Assisted customers over the phone to offer information about
+wine classes or selections.</li>
+</ol>
+
+<p> <b> POUR WINE BAR AND BISTRO </b> - Hostess </p>
+<p> October 2016 - July 2018 </p>
+<ol>
+  <li>Communicated with customers upon entering establishment.</li>
+  <li> Seated customers throughout the restaurant in divided
+sections.</li>
+  <li>Answered phone calls and took reservations.</li>
+  <li>Maintained organization and cleanliness of establishment.</li>
+</ol>
+  </article>
+</section>
+
+<footer>
+  <h1> REFERENCES </h1>
+  <p> Lauren Stock - Former Supervisor </p>
+  <p> (763) 839-2857 </p>
+  <p> Jodie Dahlheimer - Friend</p>
+  <p> (612) 758-5893 </p>
+
+</footer>
+
+</body>
+</html>
