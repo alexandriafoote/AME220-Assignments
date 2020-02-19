@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Alexandria Foote Resume</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+
+}
+  h1 {color: White}
+  h2 {color: MediumSeaGreen}
+
+.header {
+  background-color: #3cb371;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.column {
+  float: left;
+  padding: 15px;
+}
+/* Left and right column */
+.column.left {
+  border: 4px solid MediumSeaGreen;
+  width: 33.33%;
+}
+
+/* Middle column */
+.column.right {
+
+  width: 66.67%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  background: MediumSeaGreen;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+}
+#container {
+    margin: 0 auto;
+    float: left;
+    width: 90%;
+}
+#accordion input {
+	display: none;
+}
+#accordion label {
+	background: MediumSeaGreen;
+	border-radius: .25em;
+	cursor: pointer;
+	display: block;
+	margin-bottom: .125em;
+	padding: .25em 1em;
+	z-index: 20;
+}
+#accordion label:hover {
+	background: Gray;
+}
+
+#accordion input:checked + label {
+	background: Black;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: MediumSeaGreen;
+	margin-bottom: 0;
+}
+#accordion article {
+	background: #f7f7f7;
+	height:0px;
+	overflow:hidden;
+	z-index:10;
+}
+#accordion article p {
+	padding: 1em;
+}
+#accordion input:checked article {
+}
+#accordion input:checked ~ article {
+	border-bottom-left-radius: .25em;
+	border-bottom-right-radius: .25em;
+	height: auto;
+	margin-bottom: .125em;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a target="_blank" href="IMG_0005.jpg">
+    <img src="IMG_0005.jpg" alt="Thumbnail" width="200" height="300">
+  </a>
+  <h1>Alexandria Foote</h1>
+</div>
+
+<div class="row">
+  <div class="column left">
+
+    <h2> CONTACT INFO</h2>
+    <p> Address </p>
+      <li><a href="#">Tempe, AZ 85281</a></li>
+      <p> Phone </p>
+      <li><a href="#">(763) 370-9607</a></li>
+      <p> Email </p>
+      <li><a href="#">afoote1@asu.edu</a></li></p>
+
+<div id="container">
+  <header>
+    <h2>EDUCATION</h2>
+  </header>
+  <section id="accordion">
+    <div>
+      <input type="checkbox" id="check-1" />
+      <label for="check-1">Arizona State University</label>
+      <article>
+        <p>August 2018 - PRESENT</p>
+        <p><b> Area of Study: </b> Digital Culture</p>
+        <p>Currently studying Digital Culture with a focus in design at Arizona State University.</p>
+      </article>
+    </div>
+
+    <div>
+      <input type="checkbox" id="check-2" />
+      <label for="check-2">Elk River Senior High</label>
+      <article>
+        <p>September 2014 - June 2018</p>
+        <p><b> Area of Study: </b>High School Diploma</p>
+        <p>Graduated with Honors.</p>
+        </article>
+    </div>
+
+  </section>
+</div>
+  </div>
+
+  <div class="row">
+    <div class="column right">
+    <h2 style="color:Black;">PROFESSIONAL OBJECTIVE</h2>
+    <p> Highly motivated and positive individual with great organizational and communication skills. Experienced with customer service and problem solving. Knowledgable in the creative field and familiar with user experience design.</p>
+
+    <div id="container">
+  		<header>
+  			<h2 style="color:Black;">EXPERIENCE</h2>
+  		</header>
+  		<section id="accordion">
+  			<div>
+  				<input type="checkbox" id="check-3" />
+  				<label for="check-3">KRAMARCZUK'S SAUSAGE COMPANY - <i> Server </i> </label>
+  				<article>
+  					<p> May 2019 - July 2019 </p>
+  					<ol>
+  						<li>Greeted customers and offered assistance towards immediate questions or concerns.</li>
+  						<li>Recommended and interpreted food selections to customers.</li>
+  						<li>Completed monetary transactions.</li>
+  						<li>Plated, garnished, and delivered dishes to customers.</li>
+  					</ol>
+  					</article>
+  			</div>
+  			<div>
+  				<input type="checkbox" id="check-4" />
+  				<label for="check-4">POUR BOTTLE SHOP - <i> Sales Associate </i> </label>
+  				<article>
+  					<p> December 2018 - January 2019 </p>
+  					<ol>
+  						<li>Recommended and interpreted wine selections to customers.</li>
+  						<li>Completed monetary transactions.</li>
+  						<li>Stocked shelves and took inventory.</li>
+  						<li>Assisted customers over the phone to offer information about
+  					wine classes or selections.</li>
+  					</ol>
+  					</article>
+  			</div>
+  			<div>
+  				<input type="checkbox" id="check-5" />
+  				<label for="check-5">POUR WINE BAR AND BISTRO - <i> Hostess </i> </label>
+  				<article>
+  					<p> October 2016 - July 2018 </p>
+  					<ol>
+  						<li>Communicated with customers upon entering establishment.</li>
+  						<li> Seated customers throughout the restaurant in divided
+  					sections.</li>
+  						<li>Answered phone calls and took reservations.</li>
+  						<li>Maintained organization and cleanliness of establishment.</li>
+  					</ol>
+  					</article>
+  			</div>
+  		</section>
+    </div>
+</div>
+</div>
+
+    <div class="footer">
+      <h2 style="color:Black;"> REFERENCES </h2>
+      <p> Lauren Stock - Former Supervisor </p>
+      <p> (763) 839-2857 </p>
+      <p> Jodie Dahlheimer - Friend</p>
+      <p> (612) 758-5893 </p>
+    </div>
+
+</body>
+</html>
